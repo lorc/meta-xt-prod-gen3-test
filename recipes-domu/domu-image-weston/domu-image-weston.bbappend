@@ -1,6 +1,7 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 FILESEXTRAPATHS_prepend := "${THISDIR}/../../inc:"
 FILESEXTRAPATHS_prepend := "${THISDIR}/../../recipes-domx:"
+FILESEXTRAPATHS_prepend := "${THISDIR}/../../..:"
 
 do_configure[depends] += "domd-image-weston:do_domd_install_machine_overrides"
 
@@ -19,6 +20,9 @@ SRC_URI = " \
 XT_QUIRK_UNPACK_SRC_URI += " \
     file://meta-xt-prod-extra;subdir=repo \
     file://xt_shared_env.inc;subdir=repo/meta-xt-prod-extra/inc \
+    file://pvr_um_vgpu_img;subdir=repo/proprietary \
+    file://pvr_km_vgpu_img;subdir=repo/proprietary \
+    file://META_Embedded_Toolkit_2.8.1.0.3.1.zip;subdir=repo/proprietary \
 "
 
 XT_QUIRK_BB_ADD_LAYER += " \

@@ -1,2 +1,5 @@
-BRANCH = "1.10/ED5187610"
-SRCREV = "cbd692a3d7b84de9919ca86b6aefe71a9e6325f1"
+PVRUM_URL = "${TOPDIR}/../proprietary/pvr_um_vgpu_img"
+SRC_URI_r8a7795 = "file://${PVRUM_URL}"
+SRC_URI_r8a7796 = "file://${PVRUM_URL}"
+SRC_URI_r8a77965 = "file://${PVRUM_URL}"
+S = "${WORKDIR}/${PVRUM_URL}"
